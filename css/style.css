@@ -48,7 +48,7 @@ body {
 }
 
 .nav-menu {
-display: flex;
-align-items: end;
-padding-bottom: 15.5px;
+    display: flex;
+    align-items: end;
+    padding-bottom: 15.5px;
 }
