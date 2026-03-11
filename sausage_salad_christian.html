@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="icon" href="./img/icons/fav.ico" type="image/x-icon" />
+  <script src="./js/script.js" defer></script>
+  <title>Kochwelt - Wurstsalat</title>
+</head>
+
+<body>
+  <!-- Nav -->
+  <div id="nav"></div>
+  <main class="content">
+    <!-- Recipe Container -->
+    <section class="recipe_container">
+      <!-- Recipe -->
+      <div class="recipe_container--recipe">
+        <div class="recipe_container--recipe--short_info">
+          <h1 class="recipe_container--recipe--short_info--heading">
+            Wurstsalat
+          </h1>
+          <img class="recipe_container--recipe--short_info--img" src="./img/sausage_salad.jpg"
+            alt="Ein Bild vom Fertigem essen" />
+          <h6 class="recipe_container--recipe--short_info--img_source">
+            Bild von
+            <a
+              href="https://pixabay.com/de/users/ritae-19628/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1530737">RitaE</a>
+            auf
+            <a
+              href="https://pixabay.com/de//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1530737">Pixabay</a>
+          </h6>
+          <div class="recipe_container--recipe--short_info--details">
+            <span class="recipe_container--recipe--short_info--details--box"><img
+                class="recipe_container--recipe--short_info--details--box--img" src="./img/icons/clock-regular.svg"
+                alt="Clock Logo" />20 Min</span>
+            <span class="recipe_container--recipe--short_info--details--box"><img
+                class="recipe_container--recipe--short_info--details--box--img" src="./img/icons/brain-solid.svg"
+                alt="Brain Logo" />simple</span>
+            <span class="recipe_container--recipe--short_info--details--box"><img
+                class="recipe_container--recipe--short_info--details--box--img"
+                src="./img/icons/calendar-alt-regular.svg" alt="Calendar Logo" />10.08.2024</span>
+          </div>
+        </div>
+      </div>
+      <!-- Ingredients Input -->
+      <div class="recipe_container--ingredients">
+        <form class="recipe_container--ingredients--input">
+          <label for="portions">Zutaten für</label>
+          <input type="number" id="portions" name="portions" min="1" max="10" value="1" required />
+          <button onclick="CalculatePortions(event)" type="submit">
+            Portionen
+          </button>
+          <span id="error-message" class="recipe_container--ingredients--input--error"></span>
+        </form>
+      </div>
+      <!-- Ingredients List -->
+      <table class="recipe_container--ingredients_list" id="ingredientsTable">
+        <tr>
+          <td>200g Fleischwurst</td>
+        </tr>
+        <tr>
+          <td>100g Emmentaler</td>
+        </tr>
+        <tr>
+          <td>50g Gewürzgurken</td>
+        </tr>
+        <tr>
+          <td>1 Zwiebel</td>
+        </tr>
+        <tr>
+          <td>1EL Senf (nach Geschmack, z.B. mittelscharf)</td>
+        </tr>
+        <tr>
+          <td>1EL Essig</td>
+        </tr>
+        <tr>
+          <td>1EL Öl (z.B. Sonnenblumenöl)</td>
+        </tr>
+        <tr>
+          <td>Frische Kräuter wie Schnittlauch oder Petersilie</td>
+        </tr>
+      </table>
+      <!-- Preparation -->
+      <div class="recipe_container--preparation">
+        <div class="recipe_container--preparation--short_info">
+          <h2 class="recipe_container--preparation--short_info--heading">
+            Zubereitung
+          </h2>
+          <div class="recipe_container--preparation--short_info--details">
+            <span class="recipe_container--preparation--short_info--details--box"><img
+                class="recipe_container--preparation--short_info--details--box--img" src="./img/icons/clock-regular.svg"
+                alt="Clock Logo" />ca 20 Minuten</span>
+            <span class="recipe_container--preparation--short_info--details--box"><img
+                class="recipe_container--preparation--short_info--details--box--img" src="./img/icons/clock-regular.svg"
+                alt="Clock Logo" />Gesamtzeit ca 50 Minuten</span>
+          </div>
+        </div>
+        <p class="recipe_container--preparation--textarea">
+          Die Wurst in feine Streifen oder gleichmäßige Würfel schneiden.
+          Anschließend den Käse ebenfalls in mundgerechte Stücke würfeln. Die
+          Zwiebel schälen und fein hacken, die Gewürzgurken in kleine Würfel
+          schneiden.
+
+          <br /><br />
+
+          Für das Dressing Senf, Essig und Öl in einer kleinen Schüssel
+          sorgfältig verrühren, bis eine gleichmäßige Emulsion entsteht. Mit
+          Salz und frisch gemahlenem Pfeffer abschmecken. Wer eine leicht
+          süßliche Note bevorzugt, kann einen Teelöffel Zucker unterrühren.
+
+          <br /><br />
+
+          Wurst, Käse, Zwiebeln und Gurken in einer großen Schüssel vermengen.
+          Das Dressing darübergeben und alles gründlich mischen, sodass sich
+          die Aromen gleichmäßig verteilen.
+
+          <br /><br />
+
+          Den Wurstsalat mindestens 30 Minuten im Kühlschrank ziehen lassen,
+          damit er sein volles Aroma entfalten kann. Vor dem Servieren
+          nochmals abschmecken und nach Wunsch mit frischem Schnittlauch oder
+          Petersilie bestreuen.
+
+          <br /><br />
+
+          Besonders gut passt dazu frisches Bauernbrot oder ein knuspriges
+          Baguette.
+        </p>
+      </div>
+    </section>
+    <!-- Writer Container -->
+    <section class="writer_container">
+      <div class="writer_container--writer">
+        <h3 class="writer_container--writer--heading">Rezept erstellt von</h3>
+        <div class="writer_container--writer--person">
+          <div class="writer_container--writer--person--img_container">
+            <img class="writer_container--writer--person--img_container--img" src="./img/profile_ai.png"
+              alt="Bild Autor" />
+          </div>
+          <span class="writer_container--writer--person--name">
+            Chef Chris
+          </span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer Container -->
+  <div id="footer"></div>
+</body>
+
+</html>
