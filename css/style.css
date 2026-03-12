@@ -29,6 +29,8 @@ html {
     font-family: 'Raleway';
 }
 
+/* HEADER */
+
 header {
     display: flex;
     justify-content: center;
@@ -48,11 +50,29 @@ body {
 
 .nav-menu {
     display: flex;
-    align-items: end;
+    justify-content: flex-end;
+    align-items: flex-end;
     padding-bottom: 15.5px;
 }
 
-.img-koefte{
-    width: 800px;
-    height: 120px;
+/* MAIN */
+
+main img {
+    width: 400px;
+    height: 300px;
+    border-radius: 16px;
+}
+
+main {
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 240px 0;
+}
+
+.main-rezept {
+    padding-left: 24px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
 }
