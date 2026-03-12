@@ -100,7 +100,6 @@ th,
 td {
     text-align: left;
     padding: 8px;
-    /* width: 80px; */
 }
 
 tr:nth-child(even) {
@@ -113,5 +112,5 @@ th {
 }
 
 .zutaten-table td:first-child {
-    width: 32px;
+    width: 40px;
 }
