@@ -25,32 +25,44 @@
         </nav>
     </header>
 
-    <main>
-        <img src="./img/croissant.jpg" alt="">
-        <div class="main-rezept">
-            <h2>Französische Croissant</h2>
-            <p>Schmackhafte Croissants können auch zu Hause sehr einfach gebacken werden. Mit ca. 30 Minuten Aufwand
-                kannst du ein wundervolles Frühstück zaubern.</p>
+    <main> <!--Muss Main nicht über ganze Mainsection?-->
+        <div class="croissant">
+            <img src="./img/croissant.jpg" alt="">
+            <div class="main-rezept">
+                <h2>Französische Croissant</h2>
+                <p>Schmackhafte Croissants können auch zu Hause sehr einfach gebacken werden. Mit ca. 30 Minuten Aufwand
+                    kannst du ein wundervolles Frühstück zaubern.</p>
 
-            <button>Rezept Öffnen</button>
+                <button>Rezept Öffnen</button>
+            </div>
         </div>
     </main>
 
-    <section>
-        <h2>Lust auf was Neues?</h2>
-        <img src="./img/croissant.jpg" alt="">
-        <span>Frische Croissants</span>
-        <img src="./img/croissant.jpg" alt="">
-        <span>Frische Croissants</span>
-        <img src="./img/croissant.jpg" alt="">
-        <span>Frische Croissants</span>
-        <img src="./img/croissant.jpg" alt="">
-        <span>Frische Croissants</span>
+    <section class="recepie_container">
+        <h2 class="recepie_new_headline">Lust auf was Neues?</h2>
+        <div class="recepie_choices">
+            <div class="recepie_img">
+                <img class="img_form" src="./img/ungarisch-gulasch.jpg" alt="">
+                <span>Ungarisches Gulasch</span>
+            </div>
+            <div class="recepie_img">
+                <img class="img_form" src="./img/soljanka img.png" alt="">
+                <span>Soljanka</span>
+            </div>
+            <div class="recepie_img">
+                <img class="img_form" src="./img/sausage_salad.jpg" alt="">
+                <span>Wurstsalat</span>
+            </div>
+            <div class="recepie_img">
+                <img class="img_form" src="./img/img-köfte.jpg" alt="">
+                <span>Cig Köfte</span>
+            </div>
+        </div>
     </section>
 
-    <section>
-        <h2>Pfanne vs. Wok - Was ist besser?</h2>
-
+    <section class="compare_container">
+        <h2 class="compare_headline">Pfanne vs. Wok - Was ist besser?</h2>
+        <div class="compare_info">
         <p>Eine klassische Pfanne eignet sich besonders gut zum Braten von Fleisch, Eiern oder Gemüse bei mittlerer
             Hitze. Sie ist einfach zu handhaben und in den meisten Küchen der Standard. Ein Wok hingegen ist ideal für
             schnelles Anbraten bei sehr hoher Hitze, wie es in der asiatischen Küche üblich ist. Durch seine runde Form
@@ -58,7 +70,8 @@
 
             Welche Variante besser ist, hängt also davon ab, was du kochen möchtest: Für klassische Gerichte reicht eine
             Pfanne völlig aus, während ein Wok besonders für schnelle, asiatische Gerichte seine Stärken zeigt.</p>
-            <img src="./img/wok.jpg" alt="">
+        <img class="img_form" src="./img/wok.jpg" alt="">
+        </div>
     </section>
 
     <!-- <footer>
