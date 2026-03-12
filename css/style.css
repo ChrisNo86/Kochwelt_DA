@@ -10,6 +10,15 @@
     font-style: italic;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
 html a {
     text-decoration: none;
     color: black;
@@ -19,7 +28,7 @@ html a {
 }
 
 a:hover {
-    color: green;
+    color: #008000;
     text-decoration: underline;
     text-decoration-thickness: 6px;
     text-underline-offset: 15px;
@@ -94,6 +103,7 @@ img[src$=".svg"] {
 table {
     border-collapse: collapse;
     width: 100%;
+    padding: 0 240px
 }
 
 th,
