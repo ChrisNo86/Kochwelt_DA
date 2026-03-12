@@ -10,6 +10,15 @@
     font-style: italic;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
 html a {
     text-decoration: none;
     color: black;
@@ -19,7 +28,7 @@ html a {
 }
 
 a:hover {
-    color: green;
+    color: #008000;
     text-decoration: underline;
     text-decoration-thickness: 6px;
     text-underline-offset: 15px;
@@ -92,18 +101,26 @@ img[src$=".svg"] {
 
 /* TABLE ROW */
 table {
-  border-collapse: collapse;
-  width: 100%;
+    border-collapse: collapse;
+    width: 100%;
+    padding: 0 240px
 }
 
-th, td {
-  text-align: left;
-  padding: 8px;
+th,
+td {
+    text-align: left;
+    padding: 8px;
 }
 
-tr:nth-child(even){background-color: #f2f2f2}
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
 
 th {
-  background-color: #04AA6D;
-  color: white;
+    background-color: #04AA6D;
+    color: white;
+}
+
+.zutaten-table td:first-child {
+    width: 40px;
 }
