@@ -66,6 +66,12 @@ body {
 
 /* MAIN */
 
+.croissant{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
 main img {
     width: 400px;
     height: 300px;
@@ -85,6 +91,65 @@ main {
     align-items: flex-start;
     flex-direction: column;
 }
+
+
+.recepie_container{
+    background-color: #efefef;
+    padding-top: 30px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.recepie_new_headline{
+    display: flex;
+    justify-content: center;
+}
+
+.recepie_choices{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+
+.recepie_img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+}
+
+
+
+.img_form{
+    width: 240px;
+    height: 240px;
+    border-radius: 4%;
+}
+
+.compare_container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 80px;
+
+}
+
+.compare_headline{
+    display: flex;
+    justify-content: center;
+
+}
+
+.compare_info{
+    display: flex;
+    gap: 40px;
+
+}
+
 
 /* SVG ICONS ALL */
 img[src$=".svg"] {
@@ -124,6 +189,71 @@ th {
 .zutaten-table td:first-child {
     width: 40px;
 }
+
+/* FOOTER */
+
+.footer-container {
+  background-color: rgb(64, 59, 59);
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container-footer {
+  max-width: 1440px;
+  width: 100%;
+  height: 120px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 40px;
+}
+
+/* LOGO */
+
+.footer-left img {
+  height: 40px;
+  width: auto;
+
+  filter: brightness(0) saturate(100%) invert(100%);
+}
+
+/* LINKS */
+
+.footer-center {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-center a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-center a:hover {
+  color: rgb(0, 128, 0);
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 15px;
+}
+
+/* SOCIAL */
+
+.footer-right {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-right img {
+  height: 35px;
+  width: auto;
+  cursor: pointer;
+}
+
+
+
 
 /* Styling Eigene Rezepte */
 
