@@ -96,8 +96,8 @@ main {
 .recepie_container{
     background-color: #efefef;
     padding-top: 30px;
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-left: 240px;
+    padding-right: 240px;
 }
 
 .recepie_new_headline{
@@ -107,7 +107,7 @@ main {
 
 .recepie_choices{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 30px;
     padding-bottom: 80px;
 }
@@ -132,8 +132,8 @@ main {
     display: flex;
     flex-direction: column;
     padding-top: 40px;
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-left: 240px;
+    padding-right: 240px;
     padding-bottom: 80px;
 
 }
