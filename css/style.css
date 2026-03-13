@@ -284,3 +284,34 @@ th {
     padding-right: 120px;
 
 }
+
+
+/* Styling Contact Site */
+
+.contact-main-container{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 300px;
+    background-color: #dcdcdc;
+    padding: 20px;
+    border-radius: 16px;
+}
+ 
+
+.input-contact {
+    height: 30px;
+}
+
+.input-your-message{
+    height: 200px;
+}
+
+input{
+    border-radius: 6px;
+}
