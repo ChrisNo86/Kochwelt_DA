@@ -6,6 +6,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+// Header implement //
+
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("./components/header.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("header").innerHTML = data;
+    });
+});
+
+
 /* JS for Contact Side Send E-Mail */ 
 function sendMail(event){
     event.preventDefault();
