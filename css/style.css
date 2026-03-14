@@ -586,6 +586,7 @@ input{
   max-width: 1440px;
   width: 100%;
   border-collapse: collapse;   /* wichtig */
+  border-radius: 8px;
 }
 
 @media (max-width: 1500px) {
