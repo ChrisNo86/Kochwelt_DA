@@ -5,3 +5,20 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("footer").innerHTML = data;
     });
 });
+
+/* JS for Contact Side Send E-Mail */ 
+function sendMail(event){
+    event.preventDefault();
+    const data = new FormData(event.target);
+    fetch("https://formspree.io/f/mlgplzob", {
+        method: "POST",
+        body: new FormData(event.target),
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(() => {
+        window.location.href = "./send_mail.html";
+    }).catch((error) => {
+        console.log(error);
+    });
+  }

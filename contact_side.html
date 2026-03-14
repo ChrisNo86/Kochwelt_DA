@@ -25,16 +25,16 @@
     </header>
 
     <main class="contact-main-container">
-        <div class="contact-container">
+        <form class="contact-container" onsubmit="sendMail(event)">
             <h3>Kontaktiere uns</h3> <br> <br>
             <label for="name">Dein Name:</label>
             <input class="input-contact" type="text" name="name" id="name"> <br>
             <label for="email">Deine E-Mail:</label>
-            <input class="input-contact" type="text" name="email" id="email"> <br>
+            <input class="input-contact" type="e-mail" name="email"> <br>
             <label for="message">Deine Nachricht:</label>
-            <input class="input-your-message" type="text" name="message" id="message"> <br>
-            <div class="commit-button"><button class="green-button">Abschicken</button></div>
-        </div>
+            <textarea class="input-your-message" name="message"></textarea> <br>
+            <div class="commit-button"><button class="green-button" type="submit">Abschicken</button></div>
+        </form>
     </main>
 
     <!----Footer Container-->
