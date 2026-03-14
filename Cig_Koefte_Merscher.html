@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+     <script src="./js/script.js" defer></script>
     <title>Cig Köfte</title>
 </head>
 
@@ -43,9 +44,13 @@
 
 
     <div class="table-container">
-        <p>Zutaten für</p><input type="number">
-        <input type="submit" value="Portionen">
-        <table class="zutaten-table">
+        <!-- <p>Zutaten für</p><input type="number">
+        <input type="submit" value="Portionen"> -->
+        <label for="portions">Zutaten für</label>
+        <input type="number" id="portions" min="1" max="20" value="1" required>
+        <button onclick="calculatePortion(event)" type="submit">Portionen</button>
+        <span id="error"></span>
+        <table class="zutaten-table" id="ingredientTable">
             <tr>
                 <td>900g</td>
                 <td>Bulgur</td>

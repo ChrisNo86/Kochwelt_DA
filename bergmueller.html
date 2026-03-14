@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./img/logo_small.png">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
     <title>Bergmüller</title>
 </head>
 
@@ -35,10 +36,11 @@
     <br>
     <div>
         <label for="portions"> Zutaten für</label>
-        <input type="nubmer" min="1" max="10" value="1" required>
-        <button>Portions</button>
+        <input type="nubmer" id="portions" min="1" max="20" value="1" required>
+        <button onclick="calculatePortion(event)" type="submit">Portions</button>
+        <span id="error"></span>
     </div>
-    <table class="zutaten-table">
+    <table class="zutaten-table" id="ingredientTable">
         <tr>
             <td>400g</td>
             <td>Rindergulasch</td>
