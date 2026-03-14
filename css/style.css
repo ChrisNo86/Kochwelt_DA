@@ -92,6 +92,10 @@ main {
     flex-direction: column;
 }
 
+.main-recepie-text{
+    padding-bottom: 80px;
+}
+
 
 .recepie_container{
     background-color: #efefef;
@@ -163,7 +167,7 @@ img[src$=".svg"] {
     
     background-color: #008000;
     color: white;
-    width: 160px;
+    width: 240px;
     height: 50px;
     border: none;
     font-size: 18px;
@@ -310,7 +314,6 @@ th {
 .contact-container {
     display: flex;
     flex-direction: column;
-    /* height: 450px; */
     width: 400px;
     background-color: #dcdcdc;
     padding: 20px;
@@ -324,6 +327,7 @@ th {
 
 .input-your-message{
     height: 250px;
+    border: none;
 }
 
 input{
