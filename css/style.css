@@ -36,6 +36,7 @@ a:hover {
 
 html {
     font-family: 'Raleway';
+    display: block;
 }
 
 /* HEADER */
@@ -99,37 +100,62 @@ main {
 
 .recepie_container{
     background-color: #efefef;
-    padding-top: 30px;
-    padding-left: 240px;
-    padding-right: 240px;
+    padding: 40px 0;
+    width: 100%;
 }
 
 .recepie_new_headline{
     display: flex;
     justify-content: center;
+    padding-bottom: 40px;
 }
 
-.recepie_choices{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 30px;
-    padding-bottom: 80px;
+.recepie_choices {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 .recepie_img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-    font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease;
+  text-align: center;
+  cursor: pointer;
 }
 
+.recepie_img,
+.recepie_img:hover,
+.recepie_img:visited {
+  text-decoration: none;
+  color: black;
+}
 
+.img_form {
+  width: 260px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-.img_form{
-    width: 240px;
-    height: 240px;
-    border-radius: 4%;
+.recepie_img:hover .img_form {
+  transform: scale(1.06);
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.recepie_img span {
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 .compare_container{
@@ -139,9 +165,7 @@ main {
     padding-left: 240px;
     padding-right: 240px;
     padding-bottom: 80px;
-
 }
-
 .compare_headline{
     display: flex;
     justify-content: center;
