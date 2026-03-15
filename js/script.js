@@ -1,3 +1,4 @@
+// footer 
 document.addEventListener("DOMContentLoaded", () => {
   fetch("./components/footer.html")
     .then(res => res.text())
